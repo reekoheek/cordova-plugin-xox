@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="id.co.xinix.cordova.xox" version="0.0.1">
+    <name>XOX</name>
+    <description>Cross Origin XMLHttpRequest</description>
+    <license>MIT</license>
+    <keywords>cordova,cors,xmlhttprequest</keywords>
+
+    <js-module src="www/XMLHttpRequest.js" name="XMLHttpRequest">
+        <clobbers target="XMLHttpRequest" />
+    </js-module>
+
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="XOX" >
+                <param name="android-package" value="id.co.xinix.cordova.xox.XOX"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/id/co/xinix/cordova/xox/XOX.java" target-dir="src/id/co/xinix/cordova/xox" />
+    </platform>
+</plugin>

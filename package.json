@@ -1,0 +1,11 @@
+{
+  "name": "id.co.xinix.cordova.xox",
+  "version": "0.0.1",
+  "description": "Cross origin XHR for Cordova",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ganesha <reekoheek@gmail.com>",
+  "license": "MIT"
+}
